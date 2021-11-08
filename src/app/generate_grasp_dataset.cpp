@@ -68,8 +68,8 @@ int DoMain(int argc, char *argv[])
     grasp_detect::util::ParamsManager param(config_filename);
 
     string data_root{args.at("data_dir")};
-    string camera_pose_filename = data_root + "bullet/camera_pose/camera_pose.txt";
-    string pcd_folder = data_root + "bullet/pointcloud/";
+    string camera_pose_filename = data_root + "grasp_pointcloud_data/camera_pose/camera_pose.txt";
+    string pcd_folder = data_root + "grasp_pointcloud_data/pointcloud/";
     string save_path = data_root + "pointnet_grasp/raw_data_with_width";
 
     if (!fs::exists(save_path))

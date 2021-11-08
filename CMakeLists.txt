@@ -6,6 +6,7 @@ project(grasp_data_generator)
 set(CMAKE_CXX_STANDARD 14)
 add_definitions(-w) # 忽略警告
 
+find_package(Eigen3 3.3 REQUIRED)
 
 find_package(OpenMP REQUIRED)
 if(OPENMP_FOUND)
